@@ -14,6 +14,12 @@ cd proteus9-nix
 # Note: prodemo.exe is the demonstration version, to be replaced 
 nix run .#setup -- prodemo.exe
 ```
+
+If nix flakes is not set by default you need to user experimental features options:
+
+```bash
+nix --extra-experimental-features "nix-command flakes" run .#setup -- prodemo.exe
+```
 # Usage
 
 ```bash
